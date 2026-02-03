@@ -1,0 +1,69 @@
+<p><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscador de Smartphones</h1>
+
+
+<p>
+    Este buscador te permitirá elegir un teléfono con tecnología 
+    <abbr title="Pantalla de Diodos Orgánicos Emisores de Luz">OLED</abbr> 
+    o <abbr title="Tasa de Refresco Alta">HFR</abbr>.
+</p>
+
+
+<label>
+    Marca:
+    <input list="marcas-smartphones" name="marca">
+</label>
+
+<datalist id="marcas-smartphones">
+    <option value="Apple"></option>
+    <option value="Samsung"></option>
+    <option value="Xiaomi"></option>
+    <option value="Google"></option>
+    <option value="OnePlus"></option>
+</datalist>
+
+<br><br>
+
+
+<label>
+    Rango de precio:
+    <select name="precio">
+        <option value="economico">Menos de 300 €</option>
+        <option value="medio">300 €700 €</option>
+        <option value="alto">700 €  1.200 €</option>
+        <option value="premium">Más de 1.200 €</option>
+    </select>
+</label>
+
+<br><br>
+
+
+<h2>Ejemplo de Información</h2>
+
+<details>
+    <summary>¿Qué significa OLED?</summary>
+    <p>Es una tecnología de pantalla más brillante y eficiente.</p>
+</details>
+
+<details>
+    <summary>¿Qué es HFR?</summary>
+    <p>Significa <em>High Frame Rate</em>, es decir, una pantalla con alta tasa de refresco.</p>
+</details>
+
+
+<button popovertarget="dialogo" popover>Buscar</button>
+
+<dialog popover id="dialogo">
+    <p>Búsqueda realizada correctamente.</p>
+    <button popovertarget="dialogo">Cerrar</button>
+</dialog>
+
+</body>
+</html></p>

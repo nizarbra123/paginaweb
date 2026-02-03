@@ -1,0 +1,64 @@
+<P><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Cuadro del Museo del Prado</h1>
+
+<label>
+    Estado del cuadro:
+    <meter min="0" max="100" value="85">85</meter>
+</label>
+
+<label>
+    Temperatura de la sala:
+    <meter min="0" max="40" value="20">20</meter>
+</label>
+
+<br><br>
+
+<label>Elige un cuadro:
+    <input list="lista-cuadros">
+</label>
+
+<datalist id="lista-cuadros">
+    <option value="Las Meninas"></option>
+    <option value="El jardín de las delicias"></option>
+    <option value="La maja desnuda"></option>
+</datalist>
+
+<h2>Información sobre «Las Meninas»</h2>
+
+<details>
+    <summary>Nombre del cuadro</summary>
+    <p><strong>Las Meninas</strong></p>
+</details>
+
+<details>
+    <summary>Autor</summary>
+    <p>Diego Velázquez</p>
+</details>
+
+<details>
+    <summary>Año</summary>
+    <p>Pintado en <abbr title="1656 después de Cristo">1656 d.C.</abbr></p>
+</details>
+
+<details>
+    <summary>Técnica</summary>
+    <p><abbr title="Óleo sobre lienzo">Óleo</abbr></p>
+</details>
+
+<button popovertarget="mensaje" popover>Mostrar mensaje</button>
+
+<dialog popover id="mensaje">
+    <p>Información registrada.</p>
+    <button popovertarget="mensaje">Cerrar</button>
+</dialog>
+
+
+</body>
+</html></P>
